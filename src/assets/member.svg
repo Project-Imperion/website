@@ -1,0 +1,6 @@
+<svg width="100" height="84" viewBox="0 0 100 84" xmlns="http://www.w3.org/2000/svg">
+  <!-- Head (black circle) -->
+  <circle cx="50" cy="25" r="19" fill="#000" />
+  <!-- Body (large, upside-down black semicircle moved lower) -->
+  <path d="M20 70 A30 30 0 0 1 80 70" fill="#000" />
+</svg>

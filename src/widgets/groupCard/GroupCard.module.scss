@@ -1,0 +1,76 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	width: 200px;
+	height: 300px;
+
+	gap: 8px;
+	padding: 12px;
+	border: 1px solid var(--border-color);
+	border-radius: 8px;
+
+	background-color: rgba(38, 3, 15, 0.1);
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	color: var(--imperion-black);
+
+	transition: background-color 0.3s, border-color 0.3s;
+}
+
+.title {
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.description {
+	text-align: center;
+}
+
+.membersAndDiscord {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	padding: 10px;
+
+	padding-top: 16px;
+	padding-bottom: 6px;
+}
+
+.memberCount {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	font-size: 14px;
+	color: var(--imperion-dark-gray);
+}
+
+.memberIcon {
+	width: 20px;
+	height: 20px;
+
+	filter: var(--imperion-black-filter);
+}
+
+.discordLink {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.discordIcon {
+	width: 24px;
+	height: 24px;
+
+	filter: var(--imperion-black-filter);
+
+	transition: transform 0.2s;
+}	
