@@ -1,3 +1,8 @@
+.scrollingSpacer{
+	height: 60px;
+	width: 100%;
+}
+
 .header {
 	width: 100vw;
 	height: 60px;
@@ -11,7 +16,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: sticky;
+	position: fixed;
 }
 
 .name {
@@ -19,17 +24,64 @@
 	text-decoration: none;
 	color: var(--imperion-white);
 
+	user-select: none;
+
 	height: 100%;
 }
 
-.nav {
+.navBar {
 	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-grow: 1;
+	position: relative;
 }
 
-.link {
-	margin: 0 20px;
-	text-decoration: none;
-	color: var(--imperion-white);
-	font-weight: 500;
-	font-size: 16px;
+.navLinks {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.navLink {
+    text-decoration: none;
+    color: inherit;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+	width: fit-content;
+}
+
+.menuButton {
+	display: none;
+	background: none;
+	border: none;
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+@media (max-width: 600px) {
+	.navLinks {
+		display: none;
+		flex-direction: column;
+		position: fixed;
+		align-items: center;
+
+		width: 100vw;
+
+		top: 60px;
+		right: 0;
+		background: var(--imperion-black);
+		width: 100%;
+
+		border-radius: 0 0 1rem 1rem;
+		z-index: 99;
+	}
+	.navLinks.open {
+		display: flex;
+	}
+	.menuButton {
+		display: block;
+	}
 }
