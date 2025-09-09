@@ -12,7 +12,7 @@ type GroupCardProps = {
 }
 
 
-export function GroupCard({id, name, shortDesc, memberCount, discordInvite, bannerUrl}: GroupCardProps) {
+export function GroupCard({name, shortDesc, memberCount, discordInvite, bannerUrl}: GroupCardProps) {
 	return (
 		<div 
 			className={styles.card}
