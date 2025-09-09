@@ -16,10 +16,20 @@
 
 .name {
 	display: flex;
+	text-decoration: none;
+	color: var(--imperion-white);
 
 	height: 100%;
 }
 
 .nav {
 	display: flex;
+}
+
+.link {
+	margin: 0 20px;
+	text-decoration: none;
+	color: var(--imperion-white);
+	font-weight: 500;
+	font-size: 16px;
 }

@@ -19,3 +19,17 @@
 	width: 100%;
 	z-index: 1000;
 }
+
+.discordLink {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	width: fit-content;
+}
+
+.discordIcon {
+	height: 16px;
+	margin: 10px;
+
+	filter: var(--imperion-white-filter);
+}
