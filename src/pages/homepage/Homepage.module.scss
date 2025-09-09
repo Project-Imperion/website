@@ -1,0 +1,21 @@
+.homepage {
+	height: calc(100vh - 100px);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.description {
+	opacity: 0;
+	transform: translateY(-20px);
+	animation: fadeDown 1s ease-out forwards;
+
+	@keyframes fadeDown {
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+}

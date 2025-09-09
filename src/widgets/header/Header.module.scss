@@ -1,0 +1,25 @@
+.header {
+	width: 100vw;
+	height: 60px;
+	top: 0;
+	z-index: 1000;
+
+
+	background-color: var(--imperion-black);
+	color: var(--imperion-white);
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+}
+
+.name {
+	display: flex;
+
+	height: 100%;
+}
+
+.nav {
+	display: flex;
+}

@@ -1,68 +1,75 @@
 :root {
+  --imperion-black: #26030F;
+  /* --imperion-black: #130208; */
+  --imperion-red: #4C061D;
+  --imperion-orange: #EB5E28;
+
+  --imperion-white: #D0CDD7;
+  --imperion-blue: #35A7FF;
+
+
+  /* --imperion-black-filter: brightness(0) saturate(100%) invert(5%) sepia(74%) saturate(744%) hue-rotate(290deg) brightness(72%) contrast(104%); */
+
+  --imperion-black-filter: brightness(0) saturate(100%) invert(8%) sepia(7%) saturate(5291%) hue-rotate(289deg) brightness(103%) contrast(110%);
+  --imperion-red-filter: brightness(0) saturate(100%) invert(8%) sepia(27%) saturate(7377%) hue-rotate(323deg) brightness(91%) contrast(103%);
+  --imperion-orange-filter: brightness(0) saturate(100%) invert(45%) sepia(26%) saturate(4928%) hue-rotate(347deg) brightness(97%) contrast(90%);
+
+  --imperion-white-filter: brightness(0) saturate(100%) invert(86%) sepia(9%) saturate(121%) hue-rotate(210deg) brightness(112%) contrast(104%);
+  --imperion-blue-filter: brightness(0) saturate(100%) invert(53%) sepia(51%) saturate(752%) hue-rotate(169deg) brightness(101%) contrast(101%);
+
+}
+
+:root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: var(--imperion-black);
+  background-color: var(--imperion-white);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  padding: 0;
+  margin: 0;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  padding: 0;
+
   min-height: 100vh;
+
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 3em;
   line-height: 1.1;
+
+  margin: 0;
+
+  font-family: "Bruno Ace SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+h2 {
+  font-weight: 600;
+
+  margin: 0;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+p {
+  margin: 0;
 }
