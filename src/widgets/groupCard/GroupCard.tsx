@@ -27,14 +27,16 @@ export function GroupCard({id, name, shortDesc, memberCount, discordInvite, bann
 						<p>{memberCount}</p>
 						<img className={styles.memberIcon} src={member} alt="Member Icon" />
 					</div>
-					<a
-						className={styles.discordLink}
-						href={`https://discord.com/invite/${discordInvite}`}
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<img className={styles.discordIcon} src={discord} alt="Discord Icon" />
-					</a>
+					{discordInvite && (
+						<a
+							className={styles.discordLink}
+							href={discordInvite}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<img className={styles.discordIcon} src={discord} alt="Discord Icon" />
+						</a>
+					)}
 				</div>
 			</div>
 		</div>
