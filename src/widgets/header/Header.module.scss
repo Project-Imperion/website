@@ -10,7 +10,7 @@
 	z-index: 1000;
 
 
-	background-color: var(--imperion-black);
+	background: linear-gradient(to right, var(--imperion-black), var(--imperion-red));
 	color: var(--imperion-white);
 
 	display: flex;
@@ -23,6 +23,8 @@
 	display: flex;
 	text-decoration: none;
 	color: var(--imperion-white);
+
+	margin-top: 6px;
 
 	user-select: none;
 

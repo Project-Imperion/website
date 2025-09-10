@@ -16,7 +16,7 @@ export function Groups() {
 	return (
 		<div className={styles.container}>
 			{groups.map(group => (
-				<GroupCard key={group.id} {...group} />
+				<GroupCard key={group._id} {...group} />
 			))}
 		</div>
 	)

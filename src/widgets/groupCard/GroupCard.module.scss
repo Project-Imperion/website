@@ -22,6 +22,10 @@
 	transition: background-color 0.3s, border-color 0.3s;
 }
 
+.lightText {
+	color: var(--imperion-white);
+}
+
 .title {
 	text-align: center;
 	white-space: nowrap;
@@ -58,6 +62,10 @@
 	height: 20px;
 
 	filter: var(--imperion-black-filter);
+}
+
+.lightIcon {
+	filter: var(--imperion-white-filter);
 }
 
 .discordLink {
