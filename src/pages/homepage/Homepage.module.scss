@@ -2,20 +2,101 @@
 	height: calc(100vh - 120px);
 
 	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;
+
+	> * {
+		padding: 32px;
+	}
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+
+	gap: 20px;
+
+	max-width: 500px;
+}
+
+.list {
+	margin: 0;
+	padding-left: 20px;
+}
+
+.listSpacer {
+	height: 20px;
+}
+
+.actions {
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	gap: 20px;
 }
 
-.description {
-	opacity: 0;
-	transform: translateY(-20px);
-	animation: fadeDown 1s ease-out forwards;
+.actionCard {
+	width: 120px;
+	height: 120px;
 
-	@keyframes fadeDown {
-		to {
-			opacity: 1;
-			transform: translateY(0);
-		}
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	background: linear-gradient(135deg, var(--imperion-black), var(--imperion-red) 100%);
+	color: var(--imperion-white);
+	border-radius: 10px;
+
+	text-align: center;
+
+	transition: all 0.2s ease-in-out;
+	cursor: pointer;
+}
+
+.actionLink {
+	text-decoration: none;
+	color: inherit;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	height: 100%;
+	width: 100%;
+
+	&:hover {
+		text-decoration: underline;
 	}
+}
+
+.logoIcon {
+	width: 80px;
+	height: 80px;
+
+	margin-bottom: -10px;
+	margin-top: -15px;
+}
+
+.memberIcon {
+	width: 40px;
+	height: 40px;
+
+	filter: var(--imperion-white-filter);
+
+	position: relative;
+	left: -10px;
+	margin-right: -18px;
+}
+
+.discordIcon {
+	width: 40px;
+	height: 40px;
+
+	filter: var(--imperion-white-filter);
 }
