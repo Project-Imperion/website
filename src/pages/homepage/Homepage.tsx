@@ -5,6 +5,8 @@ import member from '../../assets/member.svg'
 import styles from './Homepage.module.scss'
 
 export function Homepage() {
+	const botInviteUrl = "https://discord.com/oauth2/authorize?client_id=1414737487896645664&scope=bot%20applications.commands&permissions=75776";
+	
 	return (
 		<div className={styles.homepage}>
 			<section className={styles.intro}>
@@ -31,7 +33,8 @@ export function Homepage() {
 
 			<section className={styles.actions}>
 				<div className={styles.actionCard}> 
-					<Link className={styles.actionLink} to="https://discord.com/oauth2/authorize?client_id=1414737487896645664&scope=bot%20applications.commands" target="_blank" rel="noopener noreferrer">
+					<Link className={styles.actionLink} 
+						to={botInviteUrl} target="_blank" rel="noopener noreferrer">
 						<img src={logo} alt="Logo" className={styles.logoIcon} />
 						Add our bot
 					</Link>
