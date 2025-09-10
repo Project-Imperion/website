@@ -10,7 +10,7 @@ export function Homepage() {
 			<section className={styles.intro}>
 				<div>
 					<h2>Our Mission</h2>
-					We want to make it easy for you to adviertise your Ish's State group and for potential members to find and join your group.
+					We want to make it easy for you to advertise your Ish's State group and for potential members to find and join your group.
 					After the event, we will provide a timeline of group member counts, so you can see how fast groups grew.
 				</div>
 
