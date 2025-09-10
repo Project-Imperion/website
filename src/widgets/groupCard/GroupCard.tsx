@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import discord from '../../assets/discord.svg'
 import member from '../../assets/member.svg'
