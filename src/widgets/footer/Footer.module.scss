@@ -25,6 +25,8 @@
 
 .personalData {
 	margin-left: 10px;
+
+	margin-bottom: 0;
 }
 
 .discordLink {
@@ -37,9 +39,23 @@
 	color: var(--imperion-white);
 }
 
+.discordText {
+	margin: 0;
+}
+
 .discordIcon {
 	height: 16px;
 	margin: 10px;
 
 	filter: var(--imperion-white-filter);
+}
+
+@media (max-width: 600px) {
+	.personalData {
+		display: none;
+	}
+
+	.footer {
+		justify-content: flex-end;
+	}
 }

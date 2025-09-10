@@ -35,5 +35,16 @@
 
 	/* Firefox */
 	scrollbar-color: var(--imperion-black) transparent;
+}
 
+@media (max-width: 600px) {
+	.container {
+		padding-top: 64px;
+		flex-direction: column;
+		overflow-y: auto;
+	}
+	.longDesc {
+		height: auto;
+		width: calc(100vw - 64px);
+	}
 }

@@ -100,3 +100,47 @@
 
 	filter: var(--imperion-white-filter);
 }
+
+@media (max-width: 600px) {
+	.homepage {
+		height: auto;
+		flex-direction: column-reverse;
+		align-items: stretch;
+
+		> * {
+			padding: 16px;
+		}
+	}
+
+	.intro {
+		max-width: 100%;
+		padding: 0;
+	}
+
+	.actions {
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	.actionCard {
+		width: 90px;
+		height: 90px;
+		font-size: 0.95em;
+	}
+
+	.logoIcon {
+		width: 60px;
+		height: 60px;
+		margin-bottom: -6px;
+		margin-top: -10px;
+	}
+
+	.memberIcon,
+	.discordIcon {
+		width: 28px;
+		height: 28px;
+		left: 0;
+		margin-right: -8px;
+	}
+}
