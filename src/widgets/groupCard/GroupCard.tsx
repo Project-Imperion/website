@@ -1,19 +1,26 @@
 import { useEffect, useState } from "react";
 
+import dead from '../../assets/dead.svg'
 import discord from '../../assets/discord.svg'
 import member from '../../assets/member.svg'
 import styles from './GroupCard.module.scss'
+import { useNavigate } from "react-router-dom";
+import website from '../../assets/website.svg'
 
 type GroupCardProps = {
-    id: string
+    _id: string
     name: string
     shortDesc: string
     memberCount: number
-    discordInvite: string
+    deadCount?: number
+    discordInvite?: string
     bannerUrl?: string
+    websiteUrl?: string
 }
 
-export function GroupCard({name, shortDesc, memberCount, discordInvite, bannerUrl}: GroupCardProps) {
+export function GroupCard({_id, name, shortDesc, memberCount, deadCount, discordInvite, bannerUrl, websiteUrl}: GroupCardProps) {
+    const navigate = useNavigate();
+
     const [isBannerDark, setIsBannerDark] = useState<boolean>(false);
 
     useEffect(() => {
@@ -51,27 +58,50 @@ export function GroupCard({name, shortDesc, memberCount, discordInvite, bannerUr
     return (
         <div 
             className={`${styles.card} ${isBannerDark ? styles.lightText : ""}`}
-			style={bannerUrl ? {backgroundImage: `url(${bannerUrl})`} : {}}
-		>
+            style={bannerUrl ? {backgroundImage: `url(${bannerUrl})`} : {}}
+            onClick={() => navigate(`/groups/${_id}`)}
+        >
             <h2 className={styles.title}>{name}</h2>
             <div className={styles.details}>
-                <p className={styles.description}>{shortDesc}</p>
-                <div className={styles.membersAndDiscord}>
+            <p className={styles.description}>{shortDesc}</p>
+            <div className={styles.membersAndDiscord}>
+                <div className={styles.members}>
+                {memberCount > 0 ? (
                     <div className={styles.memberCount}>
-                        <p>{memberCount}</p>
-                        <img className={`${styles.memberIcon} ${isBannerDark ? styles.lightIcon : ""}`} src={member} alt="Member Icon" />
+                    <p>{deadCount ? memberCount - deadCount : memberCount}</p>
+                    <img className={`${styles.memberIcon} ${isBannerDark ? styles.lightIcon : ""}`} src={member} alt="Member Icon" />
                     </div>
-                    {discordInvite && (
-                        <a
-                            className={`${styles.discordLink} ${isBannerDark ? styles.lightIcon : ""}`}
-                            href={discordInvite}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <img className={styles.discordIcon} src={discord} alt="Discord Icon" />
-                        </a>
-                    )}
+                ) : null}
+                {deadCount && deadCount > 0 ? (
+                    <div className={styles.memberCount}>
+                    <p>{deadCount}</p>
+                    <img className={`${styles.deadIcon} ${isBannerDark ? styles.lightIcon : ""}`} src={dead} alt="Dead Member Icon" />
+                    </div>
+                ) : null}
                 </div>
+                <div className={styles.links}>
+                {websiteUrl && (
+                    <a
+                    className={`${styles.link} ${isBannerDark ? styles.lightIcon : ""}`}
+                    href={websiteUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                    <img className={styles.websiteIcon} src={website} alt="Website Icon" />
+                    </a>
+                )}
+                {discordInvite && (
+                    <a
+                    className={`${styles.link} ${isBannerDark ? styles.lightIcon : ""}`}
+                    href={discordInvite}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                    <img className={styles.discordIcon} src={discord} alt="Discord Icon" />
+                    </a>
+                )}
+                </div>
+            </div>
             </div>
         </div>
     )

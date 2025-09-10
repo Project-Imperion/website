@@ -6,6 +6,7 @@ import { Footer } from './widgets/footer/Footer'
 import { Groups } from './pages/groups/Groups'
 import { Header } from './widgets/header/Header'
 import { Homepage } from './pages/homepage/Homepage'
+import { NotFound } from './pages/notFound/NotFound'
 
 function App() {
 	return (
@@ -15,11 +16,11 @@ function App() {
 
 				<Routes>
 					<Route path="/" element={<Homepage />} />
-
+					
 					<Route path="/groups" element={<Groups />} />
-
-
-					{/* <Route path="*" element={<NotFound />} /> */}
+					<Route path="/groups/:id" element={<Groups />} />
+					
+					<Route path="*" element={<NotFound />} />
 				</Routes>
 
 				<Footer />
