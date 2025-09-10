@@ -5,7 +5,7 @@ import member from '../../assets/member.svg'
 import styles from './Homepage.module.scss'
 
 export function Homepage() {
-	const botInviteUrl = "https://discord.com/oauth2/authorize?client_id=1414737487896645664&scope=bot%20applications.commands&permissions=75776";
+	const botInviteUrl = "https://discord.com/oauth2/authorize?client_id=1414737487896645664&scope=bot%20applications.commands&permissions=268437504";
 	
 	return (
 		<div className={styles.homepage}>
