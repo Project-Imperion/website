@@ -6,8 +6,9 @@ export function Footer() {
 		<>
 			<div className={styles.scrollingSpacer}></div>
 			<footer className={styles.footer}>
-				<p>Join us Today!</p>
 				<a className={styles.discordLink} href="https://discord.gg/Mm4Sq4byFx" target="_blank" rel="noopener noreferrer">
+					<p>Join us Today!</p>
+
 					<img className={styles.discordIcon} src={discord} alt="Join our Discord" />
 				</a>
 			</footer>
