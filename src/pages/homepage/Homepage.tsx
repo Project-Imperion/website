@@ -21,6 +21,7 @@ export function Homepage() {
 					<ul className={styles.list}>
 						<li><b>Group leaders</b> add our bot to their group's discord server.</li>
 						<li><b>Group leaders</b> use the <b>/setup</b> command to add their group to our database.</li>
+						<li><b>Group leaders</b> can use the <b>/role-menu</b> command to allow users to select discord roles from a menu.</li>
 						<p className={styles.listSpacer}></p>
 						<li>Our website advertises these groups to potential members.</li>
 						<li><b>Potential members</b> can browse and join these groups.</li>
