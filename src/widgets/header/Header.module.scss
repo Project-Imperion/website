@@ -74,7 +74,8 @@
 
 		top: 60px;
 		right: 0;
-		background: var(--imperion-black);
+		background: linear-gradient(to right, var(--imperion-black), var(--imperion-red));
+
 		width: 100%;
 
 		border-radius: 0 0 1rem 1rem;
