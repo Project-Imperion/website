@@ -29,6 +29,7 @@ export function Header() {
 					<div className={`${styles.navLinks} ${menuOpen ? styles.open : ""}`}>
 						<Link to={"/"} className={styles.navLink}>Home</Link>
 						<Link to={"/groups"} className={styles.navLink}>Groups</Link>
+						<Link to={"/help"} className={styles.navLink}>Help</Link>
 					</div>
 				</nav>
 			</div>

@@ -60,6 +60,14 @@ export function Homepage() {
 						Join our Discord
 					</Link>
 				</div>
+
+				<div className={styles.actionCard}> 
+					<Link className={styles.actionLink} 
+						to={"/help"}>
+						<p className={styles.questionMark}>?</p>
+						Help
+					</Link>
+				</div>
 			</section>
 		</div>
 	)
