@@ -20,7 +20,7 @@ export function HelpPrivacy() {
 					When you add a group using the /role-menu command, the discord bot must create a message in the channel you specify.
 					For this, we must store the <b>guild ID</b>, <b>channel ID</b>, and <b>message ID</b>, as well as the <b>role IDs</b> you want to include in the menu.
 				</li>
-				<li><b>Member Counts:</b> 
+				<li><b>Member Counts:&nbsp;</b> 
 					If you have optionally set up the member and dead roles using the /setup command, we will track the <b>number of members in your group</b>.
 					This data is stored only as a number, and does not include any personal information (including discord IDs) about individual members.
 				</li>
