@@ -84,3 +84,13 @@ ul {
   padding-left: 1.5em;
   margin-bottom: 1em;
 }
+
+a {
+  color: var(--imperion-blue);
+  text-decoration: none;
+  transition: text-decoration 0.2s;
+}
+
+a:hover {
+  text-decoration: underline;
+}

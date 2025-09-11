@@ -1,0 +1,52 @@
+.helpPageWrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+	> * {
+		padding: 32px;
+	}
+}
+
+
+.helpButtons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	gap: 20px;
+}
+
+.helpButton {
+	width: 120px;
+	height: 120px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	background: linear-gradient(135deg, var(--imperion-black), var(--imperion-red) 100%);
+	color: var(--imperion-white);
+	border-radius: 10px;
+
+	&:hover, &:focus {
+		text-decoration: underline;
+	}
+
+	text-align: center;
+
+	transition: all 0.2s ease-in-out;
+	cursor: pointer;
+}
+
+.active {
+	border: 2px solid var(--imperion-white);
+	box-shadow: 0 0 10px var(--imperion-red);
+	transform: scale(1.05);
+	pointer-events: none;
+}
+
+.helpContent {
+	max-width: 800px;
+}

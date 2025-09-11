@@ -12,8 +12,10 @@ export function Homepage() {
 			<section className={styles.intro}>
 				<div>
 					<h2>Our Mission</h2>
+					We are an <b>independent group</b>, not associated with Ish's State or its team, we just love the event and want to help its community grow.
 					We want to make it easy for you to advertise your Ish's State group and for potential members to find and join your group.
 					After the event, we will provide a timeline of group member counts, so you can see how fast groups grew.
+					Imperion <b>must not</b> be used to metagame in the event.
 				</div>
 
 				<div>
