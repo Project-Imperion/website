@@ -27,7 +27,7 @@ export function HelpPrivacy() {
 			</ul>
 			<h2>How We Use The Data</h2>
 			<ul>
-				<li><b>Service Functionality:</b> Your Discord user ID is used to manage your interactions with the Imperion bot and to associate you with any groups you add or manage.</li>
+				<li><b>Service Functionality:</b> Your Discord guild ID is used to manage your interactions with the Imperion bot.</li>
 				<li><b>Group Promotion:</b> The information you provide about your group is used to create a public listing on our platform, helping potential members discover and join your group.</li>
 			</ul>
 			<h2>Data Sharing and Security</h2>
