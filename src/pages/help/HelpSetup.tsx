@@ -23,11 +23,12 @@ export function HelpSetup() {
 						<strong>Short Description</strong>: A brief summary of your group for quick reference.
 					</li>
 					<li>
-						<strong>Long Description</strong>: A more detailed explanation about your group.
+						<strong>Long Description</strong>: A more detailed explanation about your group. This section allows for markdown, so you can include formatting, links, and lists to better describe your group. For more features, see <a href="https://www.markdownguide.org/basic-syntax/" target="_blank" rel="noreferrer">Markdown Help</a>.
 					</li>
 					<li>
 						<strong>Banner Image URL (optional)</strong>: 
 						An image link to visually represent your group, we recommend using a 2:3 aspect ratio image and hosting it through a tool like <a href="https://imgur.com/" target="_blank" rel="noreferrer">imgur</a>, you should get a link that looks like https://i.imgur.com/yourimage.png.
+						The text will be displayed over this image so avoid using images with important text, and will be light or dark depending on the average color of the image.
 					</li>
 					<li>
 						<strong>Website URL (optional)</strong>: A link to your group's official website.
