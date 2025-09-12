@@ -44,6 +44,20 @@ export function HelpSetup() {
 					</li>
 				</ul>
 			</p>
+			<h2>Member and Dead Roles</h2>
+			<p>
+				<br />
+				<strong>Member role:</strong>
+				<br />
+				Give this role to anyone actively participating in your group.
+				Counts toward your group's member total, and appears on the left of group stats.
+			</p>
+			<p>
+				<strong>Dead role:</strong>
+				<br />
+				Give this role when someone is "dead" in the event.
+				They appear as a ghost in stats and are not counted as active members.
+			</p>
 			<h2>Editing Settings</h2>
 			<p>
 				To edit your server's settings, simply run the <code>/setup</code> command again.
