@@ -46,7 +46,6 @@ export function HelpSetup() {
 			</p>
 			<h2>Member and Dead Roles</h2>
 			<p>
-				<br />
 				<strong>Member role:</strong>
 				<br />
 				Give this role to anyone actively participating in your group.
