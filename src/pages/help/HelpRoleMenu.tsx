@@ -3,13 +3,19 @@ import styles from './Help.module.scss';
 export function HelpRoleMenu() {
 	return (
 		<section className={styles.helpContent}>
-			<h1>/role-menu command</h1>
+			<h1>/role-menu Command</h1>
 			<p>
 				The /role-menu command is used to create a role selection menu for your server.
 				<br />
 				To use the /role-menu command, type <code>/role-menu</code> in your server.
 				<br />
 				The bot will guide you through the role menu creation process.
+			</p>
+			<h2>Editing the Role Menu</h2>
+			<p>
+				To edit an existing role menu, simply run the <code>/role-menu</code> command again.
+				The bot will detect the existing menu and prompt you to make changes.
+				If you need to change the channel, you can delete the existing message and run the command again to create a new menu in a different channel.
 			</p>
 			<h2>Data Storage</h2>
 			<p>

@@ -3,7 +3,7 @@ import styles from './Help.module.scss';
 export function HelpSetup() {
 	return (
 		<section className={styles.helpContent}>
-			<h1>/setup command</h1>
+			<h1>/setup Command</h1>
 			<p>
 				The /setup command is used to configure Imperion for your server.
 				<br />
@@ -42,6 +42,11 @@ export function HelpSetup() {
 						<strong>Dead Role (optional)</strong>: The role for members that have been killed during the event, we recommend you allow users a way of assigning this to themselves (such as /role-menu).
 					</li>
 				</ul>
+			</p>
+			<h2>Editing Settings</h2>
+			<p>
+				To edit your server's settings, simply run the <code>/setup</code> command again.
+				The bot will guide you through the setup process and allow you to make changes.
 			</p>
 			<h2>Data Storage</h2>
 			<p>
